@@ -1,0 +1,176 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.assentis.qa.utils</groupId>
+  <artifactId>post.processing</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>post.processing</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <jdk.version>1.8</jdk.version>
+    <jodatime.version>2.5</jodatime.version>
+    <junit.version>4.11</junit.version>
+    <log4j.version>1.2.17</log4j.version>
+    <commons.cli.version>1.4</commons.cli.version>
+    <commons.io.version>2.4</commons.io.version>
+    <docfamily.version>6.4.3-SNAPSHOT</docfamily.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>${log4j.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-cli</groupId>
+      <artifactId>commons-cli</artifactId>
+      <version>${commons.cli.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>${commons.io.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.assentis.products</groupId>
+      <artifactId>DocBase2-common</artifactId>
+      <version>${docfamily.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.assentis.products</groupId>
+      <artifactId>DocBase2-core-services</artifactId>
+      <version>${docfamily.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.assentis.products</groupId>
+      <artifactId>DocBase2-client-remoting</artifactId>
+      <version>${docfamily.version}</version>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <finalName>postprocessing</finalName>
+    <plugins>
+
+      <!-- Set a JDK compiler level -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>${jdk.version}</source>
+          <target>${jdk.version}</target>
+        </configuration>
+      </plugin>
+
+      <!-- Make this jar executable -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <!-- DO NOT include log4j.properties file in your Jar -->
+          <excludes>
+            <exclude>**/log4j.xml</exclude>
+          </excludes>
+          <archive>
+            <manifest>
+              <!-- Jar file entry point -->
+              <mainClass>com.assentis.qa.utils.PPClient</mainClass>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix>dependency-jars/</classpathPrefix>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+
+      <!-- Copy project dependency -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.5.1</version>
+        <executions>
+          <execution>
+            <id>copy-dependencies</id>
+            <phase>package</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <!-- exclude junit, we need runtime dependency only -->
+              <includeScope>runtime</includeScope>
+              <outputDirectory>${project.build.directory}/dependency-jars/</outputDirectory>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+
+          <execution>
+            <id>copy-resources</id>
+            <!-- here the phase you need -->
+            <phase>validate</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>src/main/resources</directory>
+                  <includes>
+                    <include>log4j.xml</include>
+                    <include>http-invoker.xml</include>
+                    <include>readme.txt</include>
+                    <include>postprocessing.bat</include>
+                    <include>sample_massProduction.prom</include>
+                  </includes>
+                  <!--  <filtering>true</filtering> -->
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+          <execution>
+            <id>copy-docbase-resources</id>
+            <!-- here the phase you need -->
+            <phase>validate</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/config/spring</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>src/main/resources</directory>
+                  <includes>
+                    <include>process-qa-postprocessing.xml</include>
+                    <include>abstract.xml</include>
+                    <include>process-rno.xml</include>
+                  </includes>
+                  <!--  <filtering>true</filtering> -->
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+
+      </plugin>
+
+    </plugins>
+  </build>
+</project>

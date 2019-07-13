@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:adb-iocwf="http://www.assentis.com/schema/adb-iocwf"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.assentis.com/schema/adb-iocwf http://foo.assentis/schemas/adb-iocwf.xsd">
+
+	<!-- JOBCARD -->
+	<bean class="com.assentis.db.starter.IOCWorkflowJobCard" id="sample_massProductionJobCard" scope="prototype">
+		
+		<property name="seedDataFactory">		
+			<bean class="com.assentis.db.common.DefaultSeedDataFactory" scope="prototype">
+				<property name="seedData" ref="sample_massProductionSeedData"/>
+			</bean>
+		</property>
+			
+		<property name="processor" ref="sample_massProductionProcessor"></property>
+
+		<property name="executionProps">
+			<bean class="com.assentis.db.iocworkflow.ExecutionProperties" scope="prototype">
+				<property name="jobId"><null/></property>
+				<property name="trackingLevel"><null></null></property>
+				<property name="tasksResultsBeanIds">
+					<list></list>
+				</property>
+			</bean>
+		</property>
+
+	</bean>
+	
+	<!-- SEEDDATA referenced by the JOBCARD to configure the PROCESS defined below -->
+	<bean class="com.assentis.db.iocworkflow.impl.ProcessorSeedData" name="sample_massProductionSeedData" scope="prototype">
+		<property name="runtimeProps">
+			<list>
+				
+				<!--
+					Configuration for the adb_fileSplitterTask
+				-->
+				<bean class="com.assentis.db.iocworkflow.impl.BeanRuntimeProperty" scope="prototype">
+					<property name="targetBeanName" value="adb_fileSplitterTask"/>
+					<property name="targetPropertyKey" value="sourceFiles"/>
+					<property name="newPropertyValue">
+						<list>
+							<value>data/resources/spring/samples/massProduction/massProductionTestData.xml</value>
+						</list>
+					</property>
+				</bean>
+				
+				<bean class="com.assentis.db.iocworkflow.impl.BeanRuntimeProperty" scope="prototype">
+					<property name="targetBeanName" value="adb_fileSplitterTask"/>
+					<property name="targetPropertyKey" value="encoding"/>
+					<property name="newPropertyValue" value="UTF-8"/>
+				</bean>
+				
+				<bean class="com.assentis.db.iocworkflow.impl.BeanRuntimeProperty" scope="prototype">
+					<property name="targetBeanName" value="adb_fileSplitterTask"/>
+					<property name="targetPropertyKey" value="fileSplitterRule"/>
+					<property name="newPropertyValue">
+						<list>
+							<bean class="com.assentis.db.service.FileSplitterRule">
+								<property name="xmlSplitXPath" value="/docs/doc" />
+								<property name="maxChunkSize" value="5" />
+								<property name="parentBegin" value="&lt;docs&gt;" />
+								<property name="templateAlias" value="sample_massProduction" />
+								<property name="outputFormat" value="pdf" />
+								<property name="contentId" value="application/xml" />
+								
+								<property name="delegateBeanRef" value="adb_inDataDatabaseSegmenter" />
+								<property name="elementCountPath" value="/docs/doc/line" />
+								<property name="maxElementsSize" value="10" />
+								<property name="bigDocThreshold" value="100" />
+							</bean>
+						</list>
+					</property>
+				</bean>
+				
+				<!--
+					Configuration for the adb_mergePollingConsumerTask
+				-->
+				<bean class="com.assentis.db.iocworkflow.impl.BeanRuntimeProperty" scope="prototype">
+					<property name="targetBeanName" value="adb_mergePollingConsumerTask"/>
+					<property name="targetPropertyKey" value="seedData"/>
+					<property name="newPropertyValue">
+						<bean parent="adb_mergeSeedData">
+							<property name="orderByClause" value="jobid,userstring0"/>
+							<property name="groupByItems" value="jobid,userstring0"/>
+							<property name="outputDirectory" value="/tmp/" />
+						</bean>
+					</property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- the PROCESS to start as referenced by the JOBCARD -->
+	<adb-iocwf:process id="sample_massProductionProcessor">
+		<adb-iocwf:tasks>
+			<adb-iocwf:task-ref value="adb_fileSplitterTask" />
+			<adb-iocwf:task-ref value="adb_multiRenderPollingConsumerTask" />
+			<adb-iocwf:task-ref value="adb_databaseExecutionSynchronizerTask" />
+			<adb-iocwf:task-ref value="adb_mergePollingConsumerTask" />
+		</adb-iocwf:tasks>
+	</adb-iocwf:process>
+
+</beans>

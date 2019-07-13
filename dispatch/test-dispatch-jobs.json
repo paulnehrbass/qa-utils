@@ -1,0 +1,22 @@
+{
+	"jobs":[
+		{
+			"id" : "QA-TEST-DISPATCH-01",
+			"jql" : "filter = QA-TEST-DISPATCH-01",
+			"plannedStart" : "2019-06-18",
+			"plannedEnd" : "2019-07-09",
+			"dueDate" : "2019-07-09",
+			"originalEstimate" : "5d",
+			"linkComment" : [
+                "Hallo %s :-) !\n\n",
+				"A Change Request has a default original estimation of *5d*\n",
+                "Once initially created the main task contains a single dummy testcase (%s) with planning dates and default estimations.\n",
+				"Please review the default testcase and create necessary new testcases according to the functionality of the Change Request (%s).\n",
+                "Make sure your tests fit at least the functional and non-functional requirements from product management!\n",
+                "(y) Thanks a lot! Go ahead!\n",
+                "_rno_"
+			],
+            "testcaseTemplate" : "h5. {color:#4164f4}Purpose{color}\n\n- This is an *{color:#d04437}autmated testcase{color}* creation and dispatch from QA.\n- You can use this testcase as a template for cloning your own testcases for this change request. \n- The *5d* default estimation is a guess and has to be adjusted to your needs. \n- The overall test estimation is the summary of all task related testcases linked with relation _IsChildTaskOf_ !\n- {color:#d04437}*BE CAREFULL:*{color} After your planning please make sure to delete the *testcase template* to avoid double estimations !\n\nh5. {color:#4164f4}Test environment{color}\n- *OS*:\n||Windows||Linux||||||\n|(/) |  |\n\n- *Database*:\n||Derby||Oracle||PostgreSQL||DB2||Microsoft SQL Server||\n|(/) | | | | ||\n\n- *Browsers*:\n||FF 60||IE 11||Edge||Chrome||\n|(/)|(/)| |(/)|\n\nh5. {color:#4164f4}Preconditions{color}\n- _[Precondition1]_\n- _[JavaCode]_\n{code}\nfor ( var i = 0; i < this.numFields; i++) {\n   var fname = this.getNthFieldName(i);\n   var f = this.getField(fname);\n   f.fillColor = color.green;\n}\n{code}\n- the parameter *PDFFormJS* of the action *renderPDFForm* points to the *.js* file in the repository:\n{code}\nName:        PDFFormJS\nXPath/Value: getResource?uid=XXXX.XXXX.XXXX.XXXX\nContext:     Constant\n{code}\n\n\nh5.  {color:#4164f4}Expectation{color}\n- _[Expectation]_\n\n"
+		}
+	]
+}

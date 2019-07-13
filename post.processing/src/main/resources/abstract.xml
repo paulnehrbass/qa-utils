@@ -1,0 +1,182 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="adb_abstractSequenceProcessor" abstract="true">
+		<property name="tasks">
+			<list></list>
+		</property>
+		<property name="defaultErrorHandler" ref="adb_defaultErrorHandler" />
+		<property name="defaultTaskCondition" ref="adb_normalCondition" />
+		<property name="processContext" ref="adb_mappedWorkflowDataContext" />
+		<property name="monitor" ref="adb_simpleProcessInstanceMonitor" />
+		<property name="trackReaderWriter" ref="adb_xmlBasedTrackReaderWriter" />
+		<property name="jobsWatcher" ref="adb_jobsWatcher" />
+	</bean>
+
+	<bean id="adb_abstractPollingConsumer" abstract="true">
+		<property name="strategy" ref="???"/>
+		<property name="executor" ref="???"/>
+		<property name="provider" ref="???"/>
+		<property name="context" ref= "adb_pollingConsumerSimpleContext"/>
+		<property name="errorHandler" ref="adb_nonAbortingErrorHandler"/>
+		<property name="jobsWatcher" ref="adb_jobsWatcher"/>
+	</bean>
+
+	<bean id="adb_abstractAsyncExecutor" abstract="true">
+		<property name="processor" ref="???"/>
+		<property name="endpoint" ref="???"/>
+		<property name="workerThreads" value="${adb_abstractAsyncExecutor.workerThreads}"/>
+		<property name="transactional" value="false"/>
+		<property name="workExecutor" ref="adb_workExecutorHW"/>
+	</bean>
+
+	<bean id="adb_abstractIOCWorkflowJobCard" abstract="true">
+		<property name="seedDataFactory" ref="???" />
+		<property name="processor" ref="???"/>
+		<property name="executionProps" ref="adb_executionProperties"/>
+	</bean>
+
+	<bean id="adb_abstractPollingConsumerJobCard" abstract="true">
+		<property name="seedDataFactory" ref="???"/>
+		<property name="processor" ref="???"/>
+		<property name="jobId"><null/></property>
+		<property name="trackingLevel"><null/></property>
+	</bean>
+
+	<bean id="adb_abstractRenderSeedData" abstract="true">
+		<property name="documentNames">
+			<list></list>
+		</property>
+		<property name="squeeze" value="false" />
+		<property name="bpi" value="false" />
+		<property name="xsltParams">
+			<list></list>
+		</property>
+		<property name="renderInputType" value="xml/xsl"/>
+		<property name="renderOutputType" value="pdf"/>
+		<property name="userProps">
+			<map></map>
+		</property>
+		<property name="resourceVersionSelection">
+			<null/>
+		</property>
+	</bean>
+
+	<bean id="adb_abstractMergeSeedData" abstract="true">
+		<!--property name="jobId" value="" /-->
+	<!--
+		<property name="userString0" value="" />
+		<property name="userString1" value="" />
+		<property name="userString2" value="" />
+		<property name="userString3" value="" />
+		<property name="userString4" value="" />
+		<property name="userString5" value="" />
+		<property name="userString6" value="" />
+		<property name="userString7" value="" />
+		<property name="userString8" value="" />
+		<property name="userString9" value="" />
+		<property name="customerId" value="" />
+		<property name="userProps">
+			<map></map>
+		</property>
+	-->
+		<property name="outputStreamClassName" value="java.io.FileOutputStream" />
+		<property name="outputDirectory" value="/tmp/" />
+		<property name="xepOutputFormat" value="pdf" />
+		<property name="scope" value="JOBONLY" />
+		<property name="jobRestarted" value="false" />
+		<property name="formats" >
+			<list></list>
+		</property>
+		<!-- orderByClause will be the second part of the SQL orderByClause and has no effect on creating the output files -->
+		<property name="orderByClause" value="jobId"/>
+		<!-- groupByItems will be the first part of the SQL orderByClause and is the input for grouping the merge output -->
+		<property name="groupByItems" >
+			<list>
+                                <!-- 
+                                <value>jobid</value>
+                                <value>userString0</value>
+                                <value>userString1</value>
+                                -->
+				<value>jobid</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="adb_fileSplitter" abstract="true">
+		<property name="postProcessingDAO" ref="adb_postProcessingDataDAO" />
+		<property name="sourceObjectDAO" ref="adb_sourceDAO" />
+		<property name="errorInfoDAO" ref="adb_errorInfoDAO" />
+		<property name="jobAndTaskInfoDAO" ref="adb_jobAndTaskInfoDAO"/>
+		<property name="waitingStatus" value="W"/>
+		<property name="completedStatus" value="C"/>
+		<property name="ignoreDuplicateFiles" value="false"/>
+	</bean>
+
+	<bean id="adb_abstractAfpPatcherSeedData" abstract="true">
+		<property name="jobId" value="" />
+		<property name="userString0" value="" />
+		<property name="userString1" value="" />
+		<property name="userString2" value="" />
+		<property name="userString3" value="" />
+		<property name="userString4" value="" />
+		<property name="userString5" value="" />
+		<property name="userString6" value="" />
+		<property name="userString7" value="" />
+		<property name="userString8" value="" />
+		<property name="userString9" value="" />
+		<property name="customerId" value="" />
+
+		<property name="jobRestarted" value="false" />
+
+		<!-- orderByClause will be the second part of the SQL orderByClause and has no effect on creating the output files -->
+		<property name="orderByClause" value="jobId"/>
+
+		<!-- groupByItems will be the first part of the SQL orderByClause and is the input for grouping the merge output -->
+		<property name="groupByItems" >
+			<list>
+				<!-- value>jobid, userString0, userString1, userString2</value-->
+				<value>jobid</value>
+			</list>
+		</property>
+
+		<property name="parameters">
+			<list></list>
+		</property>
+		<property name="implementation" value="com.db.danube.util.PatcherImpl" />
+		<property name="outputDirectory" value="c:/tmp/patcherout" />
+	</bean>
+
+	<bean id="adb_abstractJdbcInDataExecutionCallback" abstract="true">
+		<property name="completionStatus" value="???"/>
+		<property name="dao" ref="adb_postProcessingDataDAO"/>
+		<property name="jobDao" ref="adb_jobAndTaskInfoDAO"/>
+		<property name="errorDao" ref="adb_errorInfoDAO"/>
+	</bean>
+
+	<bean id="adb_abstractJdbcInDataLocker" abstract="true">
+		<property name="dao" ref="adb_postProcessingDataDAO"/>
+		<property name="waitingStatus" value="???"/>
+	</bean>
+
+	<bean id="adb_abstractJdbcInDataProvider" abstract="true">
+		<property name="waitingStatus" value="???"/>
+		<property name="dao" ref="adb_postProcessingDataDAO"/>
+	</bean>
+
+	<bean id="adb_abstractJdbcOutDataProvider" abstract="true">
+		<property name="waitingStatus" value="???"/>
+		<property name="dao" ref="adb_postProcessingDataDAO"/>
+	</bean>
+
+    <bean id="adb_abstractOutDataMergeProcessor" abstract="true">
+        <property name="dao" ref="adb_postProcessingDataDAO"/>
+        <property name="errorDao" ref="adb_errorInfoDAO" />
+        <property name="deliveryDao" ref="adb_deliveryDAO"/>
+        <property name="createRelations" value="true"/>
+        <property name="waitingStatus" value="W"/>
+        <property name="completionStatus" value="C"/>
+    </bean>
+
+</beans>

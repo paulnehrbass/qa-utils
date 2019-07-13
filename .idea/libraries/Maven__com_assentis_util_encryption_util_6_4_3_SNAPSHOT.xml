@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.assentis.util:encryption-util:6.4.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/assentis/util/encryption-util/6.4.3-SNAPSHOT/encryption-util-6.4.3-20190712.001336-129.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/assentis/util/encryption-util/6.4.3-SNAPSHOT/encryption-util-6.4.3-20190712.001336-129-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/assentis/util/encryption-util/6.4.3-SNAPSHOT/encryption-util-6.4.3-20190712.001336-129-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

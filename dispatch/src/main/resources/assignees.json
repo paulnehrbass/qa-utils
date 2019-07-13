@@ -1,0 +1,132 @@
+{
+	"assignees": [
+		{
+			"shortcut": "QA-CWA",
+			"self": "http://jira.assentis.info/rest/api/2/user?username=caroline.wanyonyi",
+			"name": "caroline.wanyonyi",
+			"key": "caroline.wanyonyi",
+			"emailAddress": "caroline.wanyonyi@assentis.com",
+			"avatarUrls": {
+				"48x48": "http://www.gravatar.com/avatar/7205ad5782faeab01a3585f9855513f6?d=mm&s=48",
+				"24x24": "http://www.gravatar.com/avatar/7205ad5782faeab01a3585f9855513f6?d=mm&s=24",
+				"16x16": "http://www.gravatar.com/avatar/7205ad5782faeab01a3585f9855513f6?d=mm&s=16",
+				"32x32": "http://www.gravatar.com/avatar/7205ad5782faeab01a3585f9855513f6?d=mm&s=32"
+			},
+			"displayName": "Caroline Wanyonyi",
+			"active": true,
+			"timeZone": "Europe/Zurich"
+		},
+		{
+			"shortcut": "QA-ASU",
+			"self": "http://jira.assentis.info/rest/api/2/user?username=arathi.subbaramaiah",
+			"name": "arathi.subbaramaiah",
+			"key": "arathi.subbaramaiah",
+			"emailAddress": "arathi.subbaramaiah@assentis.com",
+			"avatarUrls": {
+				"48x48": "http://www.gravatar.com/avatar/e94b0ba4c35ab9a5690fff224114367b?d=mm&s=48",
+				"24x24": "http://www.gravatar.com/avatar/e94b0ba4c35ab9a5690fff224114367b?d=mm&s=24",
+				"16x16": "http://www.gravatar.com/avatar/e94b0ba4c35ab9a5690fff224114367b?d=mm&s=16",
+				"32x32": "http://www.gravatar.com/avatar/e94b0ba4c35ab9a5690fff224114367b?d=mm&s=32"
+			},
+			"displayName": "Arathi Subbaramaiah",
+			"active": true,
+			"timeZone": "Europe/Zurich"
+		},
+		{
+			"shortcut": "QA-OSP",
+			"self": "http://jira.assentis.info/rest/api/2/user?username=oana.sparleanu",
+			"name": "oana.sparleanu",
+			"key": "oana.sparleanu",
+			"emailAddress": "oana.sparleanu@assentis.com",
+			"avatarUrls": {
+				"48x48": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=48",
+				"24x24": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=24",
+				"16x16": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=16",
+				"32x32": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=32"
+			},
+			"displayName": "Oana Sparleanu",
+			"active": true,
+			"timeZone": "Europe/Zurich"
+		},
+		{
+			"self": "http://jira.assentis.info/rest/api/2/user?username=ralf.nowicki",
+			"shortcut": "QA-RNO",
+			"name": "ralf.nowicki",
+			"key": "ralf.nowicki",
+			"emailAddress": "ralf.nowicki@assentis.com",
+			"avatarUrls": {
+				"48x48": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=48",
+				"24x24": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=24",
+				"16x16": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=16",
+				"32x32": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=32"
+			},
+			"displayName": "Ralf Nowicki",
+			"active": true,
+			"timeZone": "Europe/Zurich"
+		},
+		{
+			"self": "http://jira.assentis.info/rest/api/2/user?username=ralf.nowicki",
+			"shortcut": "QA-ADM",
+			"name": "ralf.nowicki",
+			"key": "ralf.nowicki",
+			"emailAddress": "ralf.nowicki@assentis.com",
+			"avatarUrls": {
+				"48x48": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=48",
+				"24x24": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=24",
+				"16x16": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=16",
+				"32x32": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=32"
+			},
+			"displayName": "Ralf Nowicki",
+			"active": true,
+			"timeZone": "Europe/Zurich"
+		},
+		{
+			"self": "http://jira.assentis.info/rest/api/2/user?username=andre.kraut",
+			"shortcut": "QA-AKR",
+			"name": "andre.kraut",
+			"key": "andre.kraut",
+			"emailAddress": "andre.kraut@assentis.com",
+			"avatarUrls": {
+				"48x48": "http://jira.assentis.info/secure/useravatar?avatarId=14715",
+				"24x24": "http://jira.assentis.info/secure/useravatar?size=small&avatarId=14715",
+				"16x16": "http://jira.assentis.info/secure/useravatar?size=xsmall&avatarId=14715",
+				"32x32": "http://jira.assentis.info/secure/useravatar?size=medium&avatarId=14715"
+			},
+			"displayName": "André Kraut",
+			"active": false,
+			"timeZone": "Europe/Zurich"
+		},
+		{
+			"self": "http://jira.assentis.info/rest/api/2/user?username=corina.zueger",
+			"shortcut": "QA-CZU",
+			"name": "corina.zueger",
+			"key": "corina.zueger",
+			"emailAddress": "corina.zueger@assentis.com",
+			"avatarUrls": {
+				"48x48": "http://www.gravatar.com/avatar/396a77fd27958d831c043a29ad0a4e04?d=mm&s=48",
+				"24x24": "http://www.gravatar.com/avatar/396a77fd27958d831c043a29ad0a4e04?d=mm&s=24",
+				"16x16": "http://www.gravatar.com/avatar/396a77fd27958d831c043a29ad0a4e04?d=mm&s=16",
+				"32x32": "http://www.gravatar.com/avatar/396a77fd27958d831c043a29ad0a4e04?d=mm&s=32"
+			},
+			"displayName": "Corina Züger",
+			"active": true,
+			"timeZone": "Europe/Zurich"
+		},
+		{
+			"self": "http://jira.assentis.info/rest/api/2/user?username=trupti.nagori",
+			"shortcut": "QA-TNA",
+			"name": "trupti.nagori",
+			"key": "trupti.nagori",
+			"emailAddress": "trupti.nagori@assentis.com",
+			"avatarUrls": {
+				"48x48": "http://www.gravatar.com/avatar/44eebd9126861c516e0ff5d83c8f4a1f?d=mm&s=48",
+				"24x24": "http://www.gravatar.com/avatar/44eebd9126861c516e0ff5d83c8f4a1f?d=mm&s=24",
+				"16x16": "http://www.gravatar.com/avatar/44eebd9126861c516e0ff5d83c8f4a1f?d=mm&s=16",
+				"32x32": "http://www.gravatar.com/avatar/44eebd9126861c516e0ff5d83c8f4a1f?d=mm&s=32"
+			},
+			"displayName": "Trupti Nagori",
+			"active": true,
+			"timeZone": "Europe/Zurich"
+		}
+	]
+}

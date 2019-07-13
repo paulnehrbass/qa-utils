@@ -1,0 +1,12 @@
+2019-07-13 12:27:13 DEBUG PPClient:57 - server: http://localhost:14002/DocBase2, amount: 10
+2019-07-13 12:27:13 DEBUG PPClient:61 - srcFile: massProductionTestData.xml
+2019-07-13 12:27:13 DEBUG PPClient:75 - File created: C:\QA-DEV\workspaces\qa-utils\input\input-0.xml
+2019-07-13 12:27:13 DEBUG PPClient:75 - File created: C:\QA-DEV\workspaces\qa-utils\input\input-1.xml
+2019-07-13 12:27:13 DEBUG PPClient:75 - File created: C:\QA-DEV\workspaces\qa-utils\input\input-2.xml
+2019-07-13 12:27:13 DEBUG PPClient:75 - File created: C:\QA-DEV\workspaces\qa-utils\input\input-3.xml
+2019-07-13 12:27:13 DEBUG PPClient:75 - File created: C:\QA-DEV\workspaces\qa-utils\input\input-4.xml
+2019-07-13 12:27:13 DEBUG PPClient:75 - File created: C:\QA-DEV\workspaces\qa-utils\input\input-5.xml
+2019-07-13 12:27:13 DEBUG PPClient:75 - File created: C:\QA-DEV\workspaces\qa-utils\input\input-6.xml
+2019-07-13 12:27:13 DEBUG PPClient:75 - File created: C:\QA-DEV\workspaces\qa-utils\input\input-7.xml
+2019-07-13 12:27:13 DEBUG PPClient:75 - File created: C:\QA-DEV\workspaces\qa-utils\input\input-8.xml
+2019-07-13 12:27:13 DEBUG PPClient:75 - File created: C:\QA-DEV\workspaces\qa-utils\input\input-9.xml

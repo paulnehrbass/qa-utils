@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.assentis.common:common-util:6.4.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/assentis/common/common-util/6.4.3-SNAPSHOT/common-util-6.4.3-20190712.001349-129.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/assentis/common/common-util/6.4.3-SNAPSHOT/common-util-6.4.3-20190712.001349-129-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/assentis/common/common-util/6.4.3-SNAPSHOT/common-util-6.4.3-20190712.001349-129-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

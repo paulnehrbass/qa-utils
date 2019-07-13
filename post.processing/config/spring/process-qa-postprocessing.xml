@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	
+	xmlns:adb-iocwf="http://www.assentis.com/schema/adb-iocwf"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.assentis.com/schema/adb-iocwf http://foo.assentis/schemas/adb-iocwf.xsd">
+		
+	
+	<adb-iocwf:process id="qa-postprocessing-processor">
+		<description>
+			This process renders one or more documents and then saves the render result to the postprocoutdata tables.
+
+		   	Samples: com.assentis.db.iocworkflow.samples.RenderAndSaveToPostprocoutdataSamples
+	   	</description>
+		
+		<adb-iocwf:tasks>
+			<adb-iocwf:task-ref value="adb_fileSplitterTask" />
+			<adb-iocwf:task-ref value="adb_multiRenderPollingConsumerTask" />
+			<adb-iocwf:task-ref value="adb_databaseExecutionSynchronizerTask" />
+			<adb-iocwf:task-ref value="adb_postprocessingTask" />
+		</adb-iocwf:tasks>		
+	</adb-iocwf:process>
+	
+</beans>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <!-- Request executor used by remote services proxies -->
+	<bean id="adb_httpInvokerRequestExecutor" class="org.springframework.remoting.httpinvoker.HttpComponentsHttpInvokerRequestExecutor" >
+        <!-- The HTTP client's configuration takes reponsibility for connection and authentication settings-->
+	    <property name="httpClient" ref="adb_httpClient" />	
+	</bean>
+
+    <!-- HTTP Client configuration for BasicAuth -->
+    <bean id="adb_credentialsProvider" class="org.apache.http.impl.client.BasicCredentialsProvider" />
+
+    <!-- Detailed configuration of credentials -->
+    <bean id="methodInvoke" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="targetObject"><ref bean="adb_credentialsProvider"/> </property>
+        <property name="targetMethod" value="setCredentials"></property>
+        <property name="arguments"  >
+            <list>
+                <bean class="org.apache.http.auth.AuthScope">
+                    <!-- all hosts -->
+                    <constructor-arg><null/></constructor-arg>
+                    <!-- all ports -->
+                    <constructor-arg><value>-1</value></constructor-arg>
+                    <!-- all realms -->
+                    <constructor-arg><null/></constructor-arg>
+                    <!-- all schemas -->
+                    <constructor-arg><value>Basic</value></constructor-arg>
+                </bean>
+                <!-- username and password provider for basic authentication -->
+                <bean class="org.apache.http.auth.UsernamePasswordCredentials">
+                    <constructor-arg name="userName" value="system"/>
+                    <constructor-arg name="password" value="system"/>
+                </bean>
+            </list>
+        </property>
+    </bean>
+    
+    <!-- Connection manager -->
+    <bean id="adb_httpConnectionManager" class="org.apache.http.impl.conn.PoolingClientConnectionManager" >
+        <property name="maxTotal" value="100"/>
+        <property name="defaultMaxPerRoute" value="5" />
+        
+    </bean>
+
+    <!-- 
+        Interceptor used to force preemptive authentication. 
+        This approach is required when server side defines chain of authentication methods and redirects to next one. 
+    -->
+    <bean id="adb_preemptiveAuthInterceptor" class="com.assentis.db.common.PreemptiveAuthInterceptor" />
+
+    <bean id="methodInvokeSchemeRegistry" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="targetObject"><ref bean="adb_httpClient"/> </property>
+        <property name="targetMethod" value="addRequestInterceptor"></property>
+        <property name="arguments"  >
+            <list>
+                <ref bean="adb_preemptiveAuthInterceptor" />
+            </list>
+        </property>
+    </bean>
+    
+    <!-- HTTP connection parameters -->
+    <bean id="adb_httpParams" class="org.apache.http.params.BasicHttpParams" />
+    
+    <bean id="adb_socketTimeout" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="targetObject"><ref bean="adb_httpParams"/></property>
+        <property name="targetMethod" value="setParameter"/>
+        <property name="arguments">
+            <list>
+                <value>http.socket.timeout</value>
+                <value type="int">600000</value>
+            </list>
+        </property>
+    </bean>
+    
+    <bean id="adb_connectionTimeout" class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="targetObject"><ref bean="adb_httpParams"/></property>
+        <property name="targetMethod" value="setParameter"/>
+        <property name="arguments">
+            <list>
+                <value>http.connection.timeout</value>
+                <value type="int">600000</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <!-- Http client itself -->
+    <bean id="adb_httpClient" class="org.apache.http.impl.client.DefaultHttpClient">
+        <constructor-arg ref="adb_httpConnectionManager" />
+        <constructor-arg ref="adb_httpParams" />
+        <property name="credentialsProvider" ref="adb_credentialsProvider" />
+    </bean>
+    
+</beans>

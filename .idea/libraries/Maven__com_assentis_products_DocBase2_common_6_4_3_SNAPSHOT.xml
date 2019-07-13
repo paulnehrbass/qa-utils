@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.assentis.products:DocBase2-common:6.4.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/assentis/products/DocBase2-common/6.4.3-SNAPSHOT/DocBase2-common-6.4.3-20190627.073248-90.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/assentis/products/DocBase2-common/6.4.3-SNAPSHOT/DocBase2-common-6.4.3-20190627.073248-90-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/assentis/products/DocBase2-common/6.4.3-SNAPSHOT/DocBase2-common-6.4.3-20190627.073248-90-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

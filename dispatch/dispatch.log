@@ -1,0 +1,310 @@
+2019-06-18 11:26:22 DEBUG Dispatch:56 - DispatchConfig{
+ -> jiraServer='http://jira.assentis.info/'
+ -> jiraUser='ralf.nowicki'
+ -> jiraPassword='.&Venus4/321'
+ -> mysqlPort='3306'
+ -> mysqlDatabase='qa-statistics'
+ -> mysqlDriver='com.mysql.jdbc.Driver'
+ -> mysqlUrl='jdbc:mysql://localhost'
+ -> mySqlUser='root'
+ -> mySqlPassword='pass'
+ -> jobsFile='default-dispatch-jobs.json'
+ -> debug='false'
+}
+2019-06-18 11:26:22 DEBUG Dispatch:57 - JobsConfig{jobs=[
+  {
+    "id": "6.4.3-BACKLOG-UNRELEASED-BUGS",
+    "jql": "filter \u003d 6.4.3-Backlog and type in (\"Unreleased Bug\")",
+    "plannedStart": "2019-06-18",
+    "plannedEnd": "2019-07-09",
+    "dueDate": "2019-07-09",
+    "originalEstimate": "2h",
+    "linkComment": [
+      "Unreleased Bugs have a default original estimation of 2h",
+      "Please review the test case and adjust the estimations for your needs."
+    ]
+  },
+  {
+    "id": "6.4.3-BACKLOG-BUGS",
+    "jql": "filter \u003d 6.4.3-Backlog and type in (\"Bug\")",
+    "plannedStart": "2019-06-14",
+    "plannedEnd": "2019-06-18",
+    "dueDate": "2019-06-18",
+    "originalEstimate": "2h",
+    "linkComment": [
+      "Bugs have a default original estimation of 2h",
+      "Please review the test case and adjust the estimations for your needs."
+    ]
+  },
+  {
+    "id": "6.4.3-BACKLOG-IMPROVEMENTS",
+    "jql": "filter \u003d 6.4.3-Backlog and type in (Improvement)",
+    "plannedStart": "2019-06-14",
+    "plannedEnd": "2019-06-18",
+    "dueDate": "2019-06-18",
+    "linkComment": [
+      "Bugs have a default original estimation of 4h",
+      "Please review the test case and adjust the estimations for your needs."
+    ]
+  },
+  {
+    "id": "6.4.3-BACKLOG-CHANGE-REQUESTS",
+    "jql": "filter \u003d 6.4.3-Backlog and type in (\"Change Request\")",
+    "plannedStart": "2019-06-14",
+    "plannedEnd": "2019-06-18",
+    "dueDate": "2019-06-18",
+    "linkComment": [
+      "Change Requests have a default original estimation of 1d",
+      "Please review the test case and adjust the estimations for your needs."
+    ]
+  },
+  {
+    "id": "6.4.3-BACKLOG-SECURITY-ISSUES",
+    "jql": "filter \u003d 6.4.3-Backlog and type in (\"Security Issue\")",
+    "plannedStart": "2019-06-14",
+    "plannedEnd": "2019-06-18",
+    "dueDate": "2019-06-18",
+    "originalEstimate": "4h",
+    "linkComment": [
+      "Security Issues have a default original estimation of 4h",
+      "Please review the test case and adjust the estimations for your needs."
+    ]
+  }
+]}
+2019-06-18 11:26:22 DEBUG Dispatch:63 - Loading issues for job 6.4.3-BACKLOG-UNRELEASED-BUGS ...
+2019-06-18 11:26:26 DEBUG Dispatch:66 - Issues loaded: 34
+2019-06-18 11:26:30 INFO  Dispatch:247 - TESTCASE created {issuekey=SOCO-2846, testcasekey=QAR-3595}
+2019-06-18 11:27:42 INFO  Dispatch:100 - RESPONSE {testkey=Post [id=116197, key=QAR-3595, self=http://jira.assentis.info/rest/api/2/issue/116197, errors={}], type=testcase_create, created=true}
+2019-06-18 11:27:42 DEBUG Dispatch:116 - Issue handled! key: SOCO-2846, shortcut: QA-OSP, status: In Analysis, fixVersion: ComFoundation4A 6.4.3.0, testAvailable: false, testkey: null
+2019-06-18 11:27:42 DEBUG Dispatch:116 - Issue handled! key: SOCO-2841, shortcut: QA-OSP, status: In Analysis, fixVersion: ComFoundation4A 6.4.3.0, testAvailable: true, testkey: QAR-3526
+2019-06-18 11:27:42 DEBUG Dispatch:122 - Issue ignored! key: SOCO-2836, shortcut: QA-OSP, status: Closed
+2019-06-18 11:27:42 DEBUG Dispatch:122 - Issue ignored! key: SOCO-2794, shortcut: QA-CZU, status: Closed
+2019-06-18 11:27:42 DEBUG Dispatch:122 - Issue ignored! key: SOCO-2792, shortcut: QA-CWA, status: Closed
+2019-06-18 11:27:42 DEBUG Dispatch:116 - Issue handled! key: SOCO-2791, shortcut: QA-OSP, status: Resolved, fixVersion: SolPresent 6.4.3.0, testAvailable: true, testkey: QAR-3235
+2019-06-18 11:27:45 INFO  Dispatch:247 - TESTCASE created {issuekey=CLASSIC-18917, testcasekey=QAR-3596}
+2019-06-18 11:27:45 INFO  Dispatch:100 - RESPONSE {testkey=Post [id=116198, key=QAR-3596, self=http://jira.assentis.info/rest/api/2/issue/116198, errors={}], type=testcase_create, created=true}
+2019-06-18 11:27:45 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18917, shortcut: QA-OSP, status: In Analysis, fixVersion: 6.4.3, testAvailable: false, testkey: null
+2019-06-18 11:27:45 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18812, shortcut: QA-TNA, status: Closed
+2019-06-18 11:27:45 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18783, shortcut: QA-OSP, status: Closed
+2019-06-18 11:27:45 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18782, shortcut: QA-OSP, status: Closed
+2019-06-18 11:27:45 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18781, shortcut: QA-OSP, status: Closed
+2019-06-18 11:27:45 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18780, shortcut: QA-CWA, status: Closed
+2019-06-18 11:27:45 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18779, shortcut: QA-OSP, status: Closed
+2019-06-18 11:27:45 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18777, shortcut: QA-OSP, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18776, shortcut: QA-OSP, status: Open, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3443
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18770, shortcut: QA-RNO, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18761, shortcut: QA-OSP, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18753, shortcut: QA-TNA, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18743, shortcut: QA-ASU, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18736, shortcut: QA-CWA, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18735, shortcut: QA-CWA, status: Failed, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3349
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18729, shortcut: QA-TNA, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18697, shortcut: QA-TNA, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18612, shortcut: QA-CWA, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18588, shortcut: QA-RNO, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18526, shortcut: QA-TNA, status: Rejected
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18514, shortcut: QA-TNA, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18474, shortcut: QA-RNO, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18450, shortcut: QA-RNO, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18413, shortcut: QA-TNA, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18401, shortcut: QA-RNO, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18389, shortcut: QA-RNO, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18379, shortcut: QA-OSP, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18156, shortcut: QA-CWA, status: Closed
+2019-06-18 11:27:46 DEBUG Dispatch:63 - Loading issues for job 6.4.3-BACKLOG-BUGS ...
+2019-06-18 11:27:52 DEBUG Dispatch:66 - Issues loaded: 92
+2019-06-18 11:27:52 DEBUG Dispatch:122 - Issue ignored! key: SOCO-2837, shortcut: QA-OSP, status: Passed
+2019-06-18 11:27:52 DEBUG Dispatch:122 - Issue ignored! key: SOCO-2793, shortcut: QA-OSP, status: Passed
+2019-06-18 11:27:52 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18894, shortcut: QA-RNO, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3529
+2019-06-18 11:27:52 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18894, shortcut: QA-RNO, status: Resolved, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3530
+2019-06-18 11:27:52 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18894, shortcut: QA-RNO, status: Resolved, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3531
+2019-06-18 11:27:52 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18831, shortcut: QA-ASU, status: Passed
+2019-06-18 11:27:53 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18829, shortcut: QA-TNA, status: Open, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3577
+2019-06-18 11:27:53 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18829, shortcut: QA-TNA, status: Open, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3578
+2019-06-18 11:27:55 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18829, shortcut: QA-TNA, status: Open, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3579
+2019-06-18 11:27:56 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18817, shortcut: QA-RNO, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3511
+2019-06-18 11:27:56 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18817, shortcut: QA-RNO, status: Resolved, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3512
+2019-06-18 11:27:56 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18817, shortcut: QA-RNO, status: Resolved, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3513
+2019-06-18 11:27:57 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18813, shortcut: QA-ASU, status: In Progress, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3580
+2019-06-18 11:27:57 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18813, shortcut: QA-ASU, status: In Progress, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3581
+2019-06-18 11:27:57 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18813, shortcut: QA-ASU, status: In Progress, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3582
+2019-06-18 11:27:57 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18807, shortcut: QA-CZU, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3514
+2019-06-18 11:27:57 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18807, shortcut: QA-CZU, status: Resolved, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3515
+2019-06-18 11:27:57 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18807, shortcut: QA-CZU, status: Resolved, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3516
+2019-06-18 11:27:58 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18800, shortcut: QA-ASU, status: Open, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3583
+2019-06-18 11:27:58 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18800, shortcut: QA-ASU, status: Open, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3584
+2019-06-18 11:27:58 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18800, shortcut: QA-ASU, status: Open, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3585
+2019-06-18 11:27:58 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18797, shortcut: QA-RNO, status: Passed
+2019-06-18 11:27:58 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18796, shortcut: QA-OSP, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3489
+2019-06-18 11:27:58 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18796, shortcut: QA-OSP, status: Resolved, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3490
+2019-06-18 11:27:58 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18796, shortcut: QA-OSP, status: Resolved, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3491
+2019-06-18 11:27:58 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18762, shortcut: QA-CWA, status: Passed
+2019-06-18 11:27:58 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18758, shortcut: QA-CWA, status: Passed
+2019-06-18 11:27:58 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18750, shortcut: QA-OSP, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3359
+2019-06-18 11:27:58 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18731, shortcut: QA-CZU, status: Passed
+2019-06-18 11:27:58 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18726, shortcut: QA-TNA, status: Passed
+2019-06-18 11:27:59 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18724, shortcut: QA-TNA, status: Open, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3586
+2019-06-18 11:27:59 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18724, shortcut: QA-TNA, status: Open, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3587
+2019-06-18 11:27:59 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18724, shortcut: QA-TNA, status: Open, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3588
+2019-06-18 11:27:59 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18723, shortcut: QA-ASU, status: Passed
+2019-06-18 11:27:59 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18720, shortcut: QA-RNO, status: Closed
+2019-06-18 11:27:59 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18699, shortcut: QA-RNO, status: Passed
+2019-06-18 11:27:59 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18691, shortcut: QA-OSP, status: Passed
+2019-06-18 11:27:59 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18678, shortcut: QA-CWA, status: Passed
+2019-06-18 11:27:59 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18677, shortcut: QA-CZU, status: In Progress, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3376
+2019-06-18 11:27:59 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18677, shortcut: QA-CZU, status: In Progress, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3377
+2019-06-18 11:27:59 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18677, shortcut: QA-CZU, status: In Progress, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3378
+2019-06-18 11:27:59 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18676, shortcut: QA-CZU, status: Passed
+2019-06-18 11:27:59 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18671, shortcut: QA-CZU, status: Passed
+2019-06-18 11:28:01 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18657, shortcut: QA-TNA, status: In Progress, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3314
+2019-06-18 11:28:01 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18648, shortcut: QA-CZU, status: Failed, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3236
+2019-06-18 11:28:02 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18648, shortcut: QA-CZU, status: Failed, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3237
+2019-06-18 11:28:02 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18648, shortcut: QA-CZU, status: Failed, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3238
+2019-06-18 11:28:02 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18646, shortcut: QA-TNA, status: Passed
+2019-06-18 11:28:02 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18644, shortcut: QA-CZU, status: Passed
+2019-06-18 11:28:02 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18643, shortcut: QA-TNA, status: Passed
+2019-06-18 11:28:02 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18640, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:03 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18625, shortcut: QA-RNO, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3432
+2019-06-18 11:28:03 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18625, shortcut: QA-RNO, status: Resolved, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3433
+2019-06-18 11:28:03 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18625, shortcut: QA-RNO, status: Resolved, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3434
+2019-06-18 11:28:03 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18619, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:03 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18603, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:03 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18598, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:03 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18591, shortcut: QA-RNO, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3110
+2019-06-18 11:28:03 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18589, shortcut: QA-CWA, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3239
+2019-06-18 11:28:03 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18589, shortcut: QA-CWA, status: Resolved, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3240
+2019-06-18 11:28:03 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18589, shortcut: QA-CWA, status: Resolved, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3241
+2019-06-18 11:28:03 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18583, shortcut: QA-OSP, status: Passed
+2019-06-18 11:28:04 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18581, shortcut: QA-RNO, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3242
+2019-06-18 11:28:04 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18581, shortcut: QA-RNO, status: Resolved, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3243
+2019-06-18 11:28:04 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18581, shortcut: QA-RNO, status: Resolved, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3244
+2019-06-18 11:28:04 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18579, shortcut: QA-ASU, status: Open, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3307
+2019-06-18 11:28:04 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18579, shortcut: QA-ASU, status: Open, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3308
+2019-06-18 11:28:05 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18579, shortcut: QA-ASU, status: Open, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3309
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18561, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18557, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18553, shortcut: QA-ASU, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18549, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18548, shortcut: QA-TNA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18545, shortcut: QA-TNA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18540, shortcut: QA-CZU, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18525, shortcut: QA-TNA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18523, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18520, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18519, shortcut: QA-CWA, status: Rejected
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18518, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18517, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18508, shortcut: QA-ASU, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18496, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18495, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18489, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18469, shortcut: QA-RNO, status: Closed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18468, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18464, shortcut: QA-CZU, status: Open, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3397
+2019-06-18 11:28:05 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18464, shortcut: QA-CZU, status: Open, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3398
+2019-06-18 11:28:05 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18464, shortcut: QA-CZU, status: Open, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3399
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18462, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18452, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18451, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18446, shortcut: QA-TNA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18445, shortcut: QA-TNA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18443, shortcut: QA-TNA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18435, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18432, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18427, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18418, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18412, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18407, shortcut: QA-TNA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18403, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18397, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18396, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18375, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18365, shortcut: QA-CWA, status: Rejected
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18364, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18362, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18353, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18322, shortcut: QA-RNO, status: Closed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18286, shortcut: QA-CZU, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18276, shortcut: QA-CWA, status: Closed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18252, shortcut: QA-ASU, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18229, shortcut: QA-CZU, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18218, shortcut: QA-TNA, status: Rejected
+2019-06-18 11:28:05 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18023, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:05 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-17756, shortcut: QA-OSP, status: In Progress, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3260
+2019-06-18 11:28:05 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-17756, shortcut: QA-OSP, status: In Progress, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3261
+2019-06-18 11:28:06 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-17756, shortcut: QA-OSP, status: In Progress, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3262
+2019-06-18 11:28:06 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-17117, shortcut: QA-RNO, status: Closed
+2019-06-18 11:28:06 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-16732, shortcut: QA-RNO, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3517
+2019-06-18 11:28:06 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-16732, shortcut: QA-RNO, status: Resolved, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3518
+2019-06-18 11:28:06 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-16732, shortcut: QA-RNO, status: Resolved, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3519
+2019-06-18 11:28:06 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-16605, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:06 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-12753, shortcut: QA-TNA, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3263
+2019-06-18 11:28:06 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-12753, shortcut: QA-TNA, status: Resolved, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3264
+2019-06-18 11:28:07 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-12753, shortcut: QA-TNA, status: Resolved, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3265
+2019-06-18 11:28:07 DEBUG Dispatch:63 - Loading issues for job 6.4.3-BACKLOG-IMPROVEMENTS ...
+2019-06-18 11:28:08 DEBUG Dispatch:66 - Issues loaded: 19
+2019-06-18 11:28:08 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18805, shortcut: QA-RNO, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3480
+2019-06-18 11:28:08 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18805, shortcut: QA-RNO, status: Resolved, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3481
+2019-06-18 11:28:08 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18805, shortcut: QA-RNO, status: Resolved, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3482
+2019-06-18 11:28:08 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18804, shortcut: QA-RNO, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3474
+2019-06-18 11:28:08 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18792, shortcut: QA-RNO, status: Open, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3475
+2019-06-18 11:28:09 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18792, shortcut: QA-RNO, status: Open, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3476
+2019-06-18 11:28:09 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18792, shortcut: QA-RNO, status: Open, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3477
+2019-06-18 11:28:09 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18764, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:09 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18636, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:09 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18614, shortcut: QA-TNA, status: Passed
+2019-06-18 11:28:09 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18600, shortcut: QA-RNO, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-2883
+2019-06-18 11:28:09 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18575, shortcut: QA-CWA, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3362
+2019-06-18 11:28:09 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18574, shortcut: QA-OSP, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3320
+2019-06-18 11:28:09 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18565, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:09 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18564, shortcut: QA-CZU, status: Passed
+2019-06-18 11:28:09 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18551, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:09 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18481, shortcut: QA-TNA, status: Passed
+2019-06-18 11:28:09 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18476, shortcut: QA-ASU, status: Passed
+2019-06-18 11:28:09 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18380, shortcut: QA-TNA, status: Passed
+2019-06-18 11:28:09 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18366, shortcut: QA-CWA, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-2906
+2019-06-18 11:28:09 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18337, shortcut: QA-CWA, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-2844
+2019-06-18 11:28:09 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18049, shortcut: QA-ASU, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-2871
+2019-06-18 11:28:10 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18048, shortcut: QA-CZU, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-2873
+2019-06-18 11:28:10 DEBUG Dispatch:63 - Loading issues for job 6.4.3-BACKLOG-CHANGE-REQUESTS ...
+2019-06-18 11:28:10 DEBUG Dispatch:66 - Issues loaded: 9
+2019-06-18 11:28:10 DEBUG Dispatch:116 - Issue handled! key: SOCO-2824, shortcut: QA-OSP, status: Resolved, fixVersion: ComFoundation4A 6.4.3.0, testAvailable: true, testkey: QAR-3321
+2019-06-18 11:28:10 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18718, shortcut: QA-TNA, status: Passed
+2019-06-18 11:28:10 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18682, shortcut: QA-OSP, status: Passed
+2019-06-18 11:28:10 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18552, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:10 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18499, shortcut: QA-TNA, status: Passed
+2019-06-18 11:28:10 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18367, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:10 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18328, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:11 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-17746, shortcut: QA-CZU, status: Open, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-2901
+2019-06-18 11:28:11 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-17746, shortcut: QA-CZU, status: Open, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-2902
+2019-06-18 11:28:11 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-17586, shortcut: QA-TNA, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-2903
+2019-06-18 11:28:11 DEBUG Dispatch:63 - Loading issues for job 6.4.3-BACKLOG-SECURITY-ISSUES ...
+2019-06-18 11:28:12 DEBUG Dispatch:66 - Issues loaded: 18
+2019-06-18 11:28:12 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18695, shortcut: QA-RNO, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3322
+2019-06-18 11:28:12 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18695, shortcut: QA-RNO, status: Resolved, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3323
+2019-06-18 11:28:12 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18695, shortcut: QA-RNO, status: Resolved, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3324
+2019-06-18 11:28:12 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18609, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:12 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18602, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:12 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18601, shortcut: QA-OSP, status: Closed
+2019-06-18 11:28:12 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18599, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:12 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18596, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:12 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18587, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:12 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18567, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:13 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18537, shortcut: QA-RNO, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3280
+2019-06-18 11:28:13 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18537, shortcut: QA-RNO, status: Resolved, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3281
+2019-06-18 11:28:13 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18537, shortcut: QA-RNO, status: Resolved, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3282
+2019-06-18 11:28:13 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18536, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:13 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18535, shortcut: QA-RNO, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3286
+2019-06-18 11:28:13 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18535, shortcut: QA-RNO, status: Resolved, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3287
+2019-06-18 11:28:13 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18535, shortcut: QA-RNO, status: Resolved, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3288
+2019-06-18 11:28:13 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18534, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:13 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18533, shortcut: QA-CWA, status: Passed
+2019-06-18 11:28:14 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18532, shortcut: QA-RNO, status: Resolved, fixVersion: 6.4.3, testAvailable: true, testkey: QAR-3293
+2019-06-18 11:28:14 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18532, shortcut: QA-RNO, status: Resolved, fixVersion: 6.5.1, testAvailable: true, testkey: QAR-3294
+2019-06-18 11:28:14 DEBUG Dispatch:116 - Issue handled! key: CLASSIC-18532, shortcut: QA-RNO, status: Resolved, fixVersion: 6.6.0, testAvailable: true, testkey: QAR-3295
+2019-06-18 11:28:14 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18531, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:14 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18528, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:14 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18527, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:14 DEBUG Dispatch:122 - Issue ignored! key: CLASSIC-18516, shortcut: QA-RNO, status: Passed
+2019-06-18 11:28:14 INFO  Info:49 - JQL {type=TESTS fixVersion=ComFoundation4A 6.4.3.0, jql=fixVersion in ("ComFoundation4A 6.4.3.0") and key in (QAR-3595)
+2019-06-18 11:28:14 INFO  Info:49 - JQL {type=TESTS fixVersion=6.4.3, jql=fixVersion in ("6.4.3") and key in (QAR-3596)

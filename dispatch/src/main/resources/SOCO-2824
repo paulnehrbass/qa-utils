@@ -1,0 +1,1009 @@
+{
+  "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+  "id": "114110",
+  "self": "http://jira.assentis.info/rest/api/2/issue/114110",
+  "key": "QAR-3310",
+  "fields": {
+    "issuetype": {
+      "self": "http://jira.assentis.info/rest/api/2/issuetype/3",
+      "id": "3",
+      "description": "A task that needs to be done.",
+      "iconUrl": "http://jira.assentis.info/images/icons/issuetypes/task_agile.png",
+      "name": "Task",
+      "subtask": false
+    },
+    "customfield_12490": null,
+    "customfield_10390": null,
+    "timespent": null,
+    "customfield_12890": null,
+    "project": {
+      "self": "http://jira.assentis.info/rest/api/2/project/16140",
+      "id": "16140",
+      "key": "QAR",
+      "name": "QA-RNO",
+      "avatarUrls": {
+        "48x48": "http://jira.assentis.info/secure/projectavatar?avatarId=14703",
+        "24x24": "http://jira.assentis.info/secure/projectavatar?size=small&avatarId=14703",
+        "16x16": "http://jira.assentis.info/secure/projectavatar?size=xsmall&avatarId=14703",
+        "32x32": "http://jira.assentis.info/secure/projectavatar?size=medium&avatarId=14703"
+      },
+      "projectCategory": {
+        "self": "http://jira.assentis.info/rest/api/2/projectCategory/10110",
+        "id": "10110",
+        "description": "All testing related projects and possibly other QA related Jira projects",
+        "name": "Assentis Quality Assurance"
+      }
+    },
+    "fixVersions": [
+      {
+        "self": "http://jira.assentis.info/rest/api/2/version/52360",
+        "id": "52360",
+        "description": "6.4.3",
+        "name": "6.4.3",
+        "archived": false,
+        "released": false
+      }
+    ],
+    "aggregatetimespent": null,
+    "resolution": {
+      "self": "http://jira.assentis.info/rest/api/2/resolution/1",
+      "id": "1",
+      "description": "A fix for this issue is checked into the tree and tested.",
+      "name": "Fixed"
+    },
+    "customfield_11996": null,
+    "resolutiondate": null,
+    "workratio": -1,
+    "customfield_13290": "Change Request",
+    "lastViewed": "2019-06-16T21:50:43.718+0200",
+    "watches": {
+      "self": "http://jira.assentis.info/rest/api/2/issue/QAR-3310/watchers",
+      "watchCount": 1,
+      "isWatching": true
+    },
+    "customfield_11190": "9223372036854775807",
+    "customfield_13490": null,
+    "customfield_13491": null,
+    "created": "2019-04-30T11:21:35.979+0200",
+    "customfield_11991": null,
+    "customfield_11990": null,
+    "priority": {
+      "self": "http://jira.assentis.info/rest/api/2/priority/3",
+      "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+      "name": "Major",
+      "id": "3"
+    },
+    "customfield_11995": null,
+    "labels": [
+      "DISPATCH-2019-04-30",
+      "QA-OSP"
+    ],
+    "customfield_12998": null,
+    "customfield_12997": null,
+    "customfield_12999": null,
+    "timeestimate": null,
+    "aggregatetimeoriginalestimate": null,
+    "versions": [
+      {
+        "self": "http://jira.assentis.info/rest/api/2/version/49582",
+        "id": "49582",
+        "description": "",
+        "name": "6.2.1",
+        "archived": false,
+        "released": false
+      }
+    ],
+    "issuelinks": [
+      {
+        "id": "92991",
+        "self": "http://jira.assentis.info/rest/api/2/issueLink/92991",
+        "type": {
+          "id": "10214",
+          "name": "Child-Issue",
+          "inward": "is child task of",
+          "outward": "is parent task of",
+          "self": "http://jira.assentis.info/rest/api/2/issueLinkType/10214"
+        },
+        "outwardIssue": {
+          "id": "114743",
+          "key": "QAR-3413",
+          "self": "http://jira.assentis.info/rest/api/2/issue/114743",
+          "fields": {
+            "summary": "JWT: Access with insufficient roles",
+            "status": {
+              "self": "http://jira.assentis.info/rest/api/2/status/10018",
+              "description": "The Test Case has been executed with failures",
+              "iconUrl": "http://jira.assentis.info/images/icons/statuses/generic.png",
+              "name": "Failed",
+              "id": "10018",
+              "statusCategory": {
+                "self": "http://jira.assentis.info/rest/api/2/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "In Progress"
+              }
+            },
+            "priority": {
+              "self": "http://jira.assentis.info/rest/api/2/priority/3",
+              "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://jira.assentis.info/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "This Issue Type is used to create Zephyr Test within Jira.",
+              "iconUrl": "http://jira.assentis.info/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "93057",
+        "self": "http://jira.assentis.info/rest/api/2/issueLink/93057",
+        "type": {
+          "id": "10214",
+          "name": "Child-Issue",
+          "inward": "is child task of",
+          "outward": "is parent task of",
+          "self": "http://jira.assentis.info/rest/api/2/issueLinkType/10214"
+        },
+        "outwardIssue": {
+          "id": "114778",
+          "key": "QAR-3421",
+          "self": "http://jira.assentis.info/rest/api/2/issue/114778",
+          "fields": {
+            "summary": "JWT: Tokens CCM Preview",
+            "status": {
+              "self": "http://jira.assentis.info/rest/api/2/status/10018",
+              "description": "The Test Case has been executed with failures",
+              "iconUrl": "http://jira.assentis.info/images/icons/statuses/generic.png",
+              "name": "Failed",
+              "id": "10018",
+              "statusCategory": {
+                "self": "http://jira.assentis.info/rest/api/2/statuscategory/4",
+                "id": 4,
+                "key": "indeterminate",
+                "colorName": "yellow",
+                "name": "In Progress"
+              }
+            },
+            "priority": {
+              "self": "http://jira.assentis.info/rest/api/2/priority/3",
+              "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://jira.assentis.info/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "This Issue Type is used to create Zephyr Test within Jira.",
+              "iconUrl": "http://jira.assentis.info/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "92872",
+        "self": "http://jira.assentis.info/rest/api/2/issueLink/92872",
+        "type": {
+          "id": "10214",
+          "name": "Child-Issue",
+          "inward": "is child task of",
+          "outward": "is parent task of",
+          "self": "http://jira.assentis.info/rest/api/2/issueLinkType/10214"
+        },
+        "outwardIssue": {
+          "id": "114632",
+          "key": "QAR-3365",
+          "self": "http://jira.assentis.info/rest/api/2/issue/114632",
+          "fields": {
+            "summary": "JWT tokens configuration in DocFamily",
+            "status": {
+              "self": "http://jira.assentis.info/rest/api/2/status/6",
+              "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+              "iconUrl": "http://jira.assentis.info/images/icons/statuses/closed.png",
+              "name": "Closed",
+              "id": "6",
+              "statusCategory": {
+                "self": "http://jira.assentis.info/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "http://jira.assentis.info/rest/api/2/priority/3",
+              "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://jira.assentis.info/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "This Issue Type is used to create Zephyr Test within Jira.",
+              "iconUrl": "http://jira.assentis.info/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "92918",
+        "self": "http://jira.assentis.info/rest/api/2/issueLink/92918",
+        "type": {
+          "id": "10214",
+          "name": "Child-Issue",
+          "inward": "is child task of",
+          "outward": "is parent task of",
+          "self": "http://jira.assentis.info/rest/api/2/issueLinkType/10214"
+        },
+        "outwardIssue": {
+          "id": "114693",
+          "key": "QAR-3369",
+          "self": "http://jira.assentis.info/rest/api/2/issue/114693",
+          "fields": {
+            "summary": "JWT: Access with valid tokens",
+            "status": {
+              "self": "http://jira.assentis.info/rest/api/2/status/6",
+              "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+              "iconUrl": "http://jira.assentis.info/images/icons/statuses/closed.png",
+              "name": "Closed",
+              "id": "6",
+              "statusCategory": {
+                "self": "http://jira.assentis.info/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "http://jira.assentis.info/rest/api/2/priority/3",
+              "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://jira.assentis.info/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "This Issue Type is used to create Zephyr Test within Jira.",
+              "iconUrl": "http://jira.assentis.info/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "92923",
+        "self": "http://jira.assentis.info/rest/api/2/issueLink/92923",
+        "type": {
+          "id": "10214",
+          "name": "Child-Issue",
+          "inward": "is child task of",
+          "outward": "is parent task of",
+          "self": "http://jira.assentis.info/rest/api/2/issueLinkType/10214"
+        },
+        "outwardIssue": {
+          "id": "114697",
+          "key": "QAR-3370",
+          "self": "http://jira.assentis.info/rest/api/2/issue/114697",
+          "fields": {
+            "summary": "JWT: Access with expired tokens",
+            "status": {
+              "self": "http://jira.assentis.info/rest/api/2/status/6",
+              "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+              "iconUrl": "http://jira.assentis.info/images/icons/statuses/closed.png",
+              "name": "Closed",
+              "id": "6",
+              "statusCategory": {
+                "self": "http://jira.assentis.info/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "http://jira.assentis.info/rest/api/2/priority/3",
+              "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://jira.assentis.info/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "This Issue Type is used to create Zephyr Test within Jira.",
+              "iconUrl": "http://jira.assentis.info/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "93039",
+        "self": "http://jira.assentis.info/rest/api/2/issueLink/93039",
+        "type": {
+          "id": "10214",
+          "name": "Child-Issue",
+          "inward": "is child task of",
+          "outward": "is parent task of",
+          "self": "http://jira.assentis.info/rest/api/2/issueLinkType/10214"
+        },
+        "outwardIssue": {
+          "id": "114770",
+          "key": "QAR-3418",
+          "self": "http://jira.assentis.info/rest/api/2/issue/114770",
+          "fields": {
+            "summary": "JWT: Access with invalid issuer",
+            "status": {
+              "self": "http://jira.assentis.info/rest/api/2/status/6",
+              "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+              "iconUrl": "http://jira.assentis.info/images/icons/statuses/closed.png",
+              "name": "Closed",
+              "id": "6",
+              "statusCategory": {
+                "self": "http://jira.assentis.info/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "http://jira.assentis.info/rest/api/2/priority/3",
+              "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://jira.assentis.info/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "This Issue Type is used to create Zephyr Test within Jira.",
+              "iconUrl": "http://jira.assentis.info/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "93042",
+        "self": "http://jira.assentis.info/rest/api/2/issueLink/93042",
+        "type": {
+          "id": "10214",
+          "name": "Child-Issue",
+          "inward": "is child task of",
+          "outward": "is parent task of",
+          "self": "http://jira.assentis.info/rest/api/2/issueLinkType/10214"
+        },
+        "outwardIssue": {
+          "id": "114772",
+          "key": "QAR-3419",
+          "self": "http://jira.assentis.info/rest/api/2/issue/114772",
+          "fields": {
+            "summary": "JWT: Access with invalid audience",
+            "status": {
+              "self": "http://jira.assentis.info/rest/api/2/status/6",
+              "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+              "iconUrl": "http://jira.assentis.info/images/icons/statuses/closed.png",
+              "name": "Closed",
+              "id": "6",
+              "statusCategory": {
+                "self": "http://jira.assentis.info/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "http://jira.assentis.info/rest/api/2/priority/3",
+              "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://jira.assentis.info/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "This Issue Type is used to create Zephyr Test within Jira.",
+              "iconUrl": "http://jira.assentis.info/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "93045",
+        "self": "http://jira.assentis.info/rest/api/2/issueLink/93045",
+        "type": {
+          "id": "10214",
+          "name": "Child-Issue",
+          "inward": "is child task of",
+          "outward": "is parent task of",
+          "self": "http://jira.assentis.info/rest/api/2/issueLinkType/10214"
+        },
+        "outwardIssue": {
+          "id": "114775",
+          "key": "QAR-3420",
+          "self": "http://jira.assentis.info/rest/api/2/issue/114775",
+          "fields": {
+            "summary": " JWT: Access before expected timeframe",
+            "status": {
+              "self": "http://jira.assentis.info/rest/api/2/status/6",
+              "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+              "iconUrl": "http://jira.assentis.info/images/icons/statuses/closed.png",
+              "name": "Closed",
+              "id": "6",
+              "statusCategory": {
+                "self": "http://jira.assentis.info/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "http://jira.assentis.info/rest/api/2/priority/3",
+              "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://jira.assentis.info/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "This Issue Type is used to create Zephyr Test within Jira.",
+              "iconUrl": "http://jira.assentis.info/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "93063",
+        "self": "http://jira.assentis.info/rest/api/2/issueLink/93063",
+        "type": {
+          "id": "10214",
+          "name": "Child-Issue",
+          "inward": "is child task of",
+          "outward": "is parent task of",
+          "self": "http://jira.assentis.info/rest/api/2/issueLinkType/10214"
+        },
+        "outwardIssue": {
+          "id": "114780",
+          "key": "QAR-3423",
+          "self": "http://jira.assentis.info/rest/api/2/issue/114780",
+          "fields": {
+            "summary": " JWT: Tokens CCM Edit Finalize",
+            "status": {
+              "self": "http://jira.assentis.info/rest/api/2/status/6",
+              "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+              "iconUrl": "http://jira.assentis.info/images/icons/statuses/closed.png",
+              "name": "Closed",
+              "id": "6",
+              "statusCategory": {
+                "self": "http://jira.assentis.info/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "http://jira.assentis.info/rest/api/2/priority/3",
+              "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://jira.assentis.info/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "This Issue Type is used to create Zephyr Test within Jira.",
+              "iconUrl": "http://jira.assentis.info/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "93067",
+        "self": "http://jira.assentis.info/rest/api/2/issueLink/93067",
+        "type": {
+          "id": "10214",
+          "name": "Child-Issue",
+          "inward": "is child task of",
+          "outward": "is parent task of",
+          "self": "http://jira.assentis.info/rest/api/2/issueLinkType/10214"
+        },
+        "outwardIssue": {
+          "id": "114784",
+          "key": "QAR-3424",
+          "self": "http://jira.assentis.info/rest/api/2/issue/114784",
+          "fields": {
+            "summary": "JWT: DocBase cmd line simpleRender",
+            "status": {
+              "self": "http://jira.assentis.info/rest/api/2/status/6",
+              "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+              "iconUrl": "http://jira.assentis.info/images/icons/statuses/closed.png",
+              "name": "Closed",
+              "id": "6",
+              "statusCategory": {
+                "self": "http://jira.assentis.info/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "http://jira.assentis.info/rest/api/2/priority/3",
+              "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://jira.assentis.info/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "This Issue Type is used to create Zephyr Test within Jira.",
+              "iconUrl": "http://jira.assentis.info/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "93074",
+        "self": "http://jira.assentis.info/rest/api/2/issueLink/93074",
+        "type": {
+          "id": "10214",
+          "name": "Child-Issue",
+          "inward": "is child task of",
+          "outward": "is parent task of",
+          "self": "http://jira.assentis.info/rest/api/2/issueLinkType/10214"
+        },
+        "outwardIssue": {
+          "id": "114790",
+          "key": "QAR-3425",
+          "self": "http://jira.assentis.info/rest/api/2/issue/114790",
+          "fields": {
+            "summary": "JWT: Web Service with JWE token",
+            "status": {
+              "self": "http://jira.assentis.info/rest/api/2/status/6",
+              "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+              "iconUrl": "http://jira.assentis.info/images/icons/statuses/closed.png",
+              "name": "Closed",
+              "id": "6",
+              "statusCategory": {
+                "self": "http://jira.assentis.info/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "http://jira.assentis.info/rest/api/2/priority/3",
+              "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://jira.assentis.info/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "This Issue Type is used to create Zephyr Test within Jira.",
+              "iconUrl": "http://jira.assentis.info/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "93076",
+        "self": "http://jira.assentis.info/rest/api/2/issueLink/93076",
+        "type": {
+          "id": "10214",
+          "name": "Child-Issue",
+          "inward": "is child task of",
+          "outward": "is parent task of",
+          "self": "http://jira.assentis.info/rest/api/2/issueLinkType/10214"
+        },
+        "outwardIssue": {
+          "id": "114791",
+          "key": "QAR-3426",
+          "self": "http://jira.assentis.info/rest/api/2/issue/114791",
+          "fields": {
+            "summary": "JWT: Rest API with JWE token",
+            "status": {
+              "self": "http://jira.assentis.info/rest/api/2/status/6",
+              "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+              "iconUrl": "http://jira.assentis.info/images/icons/statuses/closed.png",
+              "name": "Closed",
+              "id": "6",
+              "statusCategory": {
+                "self": "http://jira.assentis.info/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "http://jira.assentis.info/rest/api/2/priority/3",
+              "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://jira.assentis.info/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "This Issue Type is used to create Zephyr Test within Jira.",
+              "iconUrl": "http://jira.assentis.info/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "93124",
+        "self": "http://jira.assentis.info/rest/api/2/issueLink/93124",
+        "type": {
+          "id": "10214",
+          "name": "Child-Issue",
+          "inward": "is child task of",
+          "outward": "is parent task of",
+          "self": "http://jira.assentis.info/rest/api/2/issueLinkType/10214"
+        },
+        "outwardIssue": {
+          "id": "114906",
+          "key": "QAR-3435",
+          "self": "http://jira.assentis.info/rest/api/2/issue/114906",
+          "fields": {
+            "summary": "Access using IDP server (sign in to DW)",
+            "status": {
+              "self": "http://jira.assentis.info/rest/api/2/status/6",
+              "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+              "iconUrl": "http://jira.assentis.info/images/icons/statuses/closed.png",
+              "name": "Closed",
+              "id": "6",
+              "statusCategory": {
+                "self": "http://jira.assentis.info/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "http://jira.assentis.info/rest/api/2/priority/3",
+              "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://jira.assentis.info/rest/api/2/issuetype/10000",
+              "id": "10000",
+              "description": "This Issue Type is used to create Zephyr Test within Jira.",
+              "iconUrl": "http://jira.assentis.info/download/resources/com.thed.zephyr.je/images/icons/ico_zephyr_issuetype.png",
+              "name": "Test",
+              "subtask": false
+            }
+          }
+        }
+      },
+      {
+        "id": "92272",
+        "self": "http://jira.assentis.info/rest/api/2/issueLink/92272",
+        "type": {
+          "id": "10010",
+          "name": "Tests",
+          "inward": "is tested by",
+          "outward": "tests",
+          "self": "http://jira.assentis.info/rest/api/2/issueLinkType/10010"
+        },
+        "outwardIssue": {
+          "id": "114099",
+          "key": "CLASSIC-18682",
+          "self": "http://jira.assentis.info/rest/api/2/issue/114099",
+          "fields": {
+            "summary": "CLONE - Support for IDP integration with JWT tokens",
+            "status": {
+              "self": "http://jira.assentis.info/rest/api/2/status/10017",
+              "description": "The Test Case has been successfully executed",
+              "iconUrl": "http://jira.assentis.info/images/icons/statuses/generic.png",
+              "name": "Passed",
+              "id": "10017",
+              "statusCategory": {
+                "self": "http://jira.assentis.info/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "http://jira.assentis.info/rest/api/2/priority/3",
+              "iconUrl": "http://jira.assentis.info/images/icons/priorities/major.svg",
+              "name": "Major",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "http://jira.assentis.info/rest/api/2/issuetype/14",
+              "id": "14",
+              "description": "Change Request used by Quality Assurance",
+              "iconUrl": "http://jira.assentis.info/secure/viewavatar?size=xsmall&avatarId=12411&avatarType=issuetype",
+              "name": "Change Request",
+              "subtask": false,
+              "avatarId": 12411
+            }
+          }
+        }
+      }
+    ],
+    "assignee": {
+      "self": "http://jira.assentis.info/rest/api/2/user?username=oana.sparleanu",
+      "name": "oana.sparleanu",
+      "key": "oana.sparleanu",
+      "emailAddress": "oana.sparleanu@assentis.com",
+      "avatarUrls": {
+        "48x48": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=48",
+        "24x24": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=24",
+        "16x16": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=16",
+        "32x32": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=32"
+      },
+      "displayName": "Oana Sparleanu",
+      "active": true,
+      "timeZone": "Europe/Zurich"
+    },
+    "updated": "2019-05-29T10:06:50.655+0200",
+    "status": {
+      "self": "http://jira.assentis.info/rest/api/2/status/3",
+      "description": "The issue is currently being worked on.",
+      "iconUrl": "http://jira.assentis.info/images/icons/statuses/inprogress.png",
+      "name": "In Progress",
+      "id": "3",
+      "statusCategory": {
+        "self": "http://jira.assentis.info/rest/api/2/statuscategory/4",
+        "id": 4,
+        "key": "indeterminate",
+        "colorName": "yellow",
+        "name": "In Progress"
+      }
+    },
+    "customfield_12190": null,
+    "components": [
+      {
+        "self": "http://jira.assentis.info/rest/api/2/component/34712",
+        "id": "34712",
+        "name": "__Integrate"
+      },
+      {
+        "self": "http://jira.assentis.info/rest/api/2/component/34413",
+        "id": "34413",
+        "name": "_Com4Base"
+      },
+      {
+        "self": "http://jira.assentis.info/rest/api/2/component/34203",
+        "id": "34203",
+        "name": "_DocBase",
+        "description": "DocBase"
+      },
+      {
+        "self": "http://jira.assentis.info/rest/api/2/component/32501",
+        "id": "32501",
+        "name": "_DocRepo"
+      },
+      {
+        "self": "http://jira.assentis.info/rest/api/2/component/31302",
+        "id": "31302",
+        "name": "_DocWrite"
+      }
+    ],
+    "customfield_12192": null,
+    "customfield_12191": null,
+    "customfield_12590": "1|zy1a48:",
+    "customfield_12193": null,
+    "customfield_12591": "0|i09aiv:",
+    "timeoriginalestimate": null,
+    "customfield_12990": null,
+    "customfield_10690": "2019-04-30",
+    "description": "*{color:#d04437}SEE CLASSIC-18682{color}*\r\n\r\n\r\nh5. {color:#4164f4}Purpose{color}\r\nAll applications must start-up properly with JWT configuration.\r\n- Access protected resource using issued token is working\r\n- Access using IDP server (sign in to DW) is working\r\n- Based on tokens all works as expected:\r\n-- ComFoundation preview\r\n-- ComFoundation edit/finalize\r\n--  DocBase command line client\r\n-- Web Services\r\n-- Rest API\r\n\r\n\r\n\r\nh5. {color:#4164f4}Test environment{color}\r\n- *OS*:\r\n||Windows||Linux||||||\r\n|(/) |  |\r\n\r\nh5. {color:#4164f4}Tools{color}\r\n- Download from *Azure* and install according to the instructions:\r\n--  *test-tools*\r\n\r\n- *Database*:\r\n||Derby||Oracle||PostgreSQL||DB2||Microsoft SQL Server||\r\n| |(/) | | | ||\r\n\r\n- *Browsers*:\r\n||FF 60||IE 11||Edge||Chrome||\r\n|(/)|(/)| |(/)|\r\n\r\nh5. {color:#4164f4}Preconditions{color}\r\n- DocFamily is successfully installed and configured according to the installation guides\r\n- The attached *prom.prom* is correctly imported\r\n\r\n\r\nh5.  {color:#4164f4}Expectation{color}\r\n- All the applications start.\r\n- Access protected resource using issued token is working\r\n- Access using IDP server (sign in to DW) is working\r\n- Based on tokens all works as expected:\r\n-- ComFoundation preview\r\n-- ComFoundation edit/finalize\r\n--  DocBase command line client\r\n-- Web Services\r\n-- Rest API\r\n\r\n\r\n1. Execute QAR-3365 (JWT tokens configuration in DocFamily)\r\n2. Execute QAR-3369 (JWT: Access with valid tokens)\r\n3. Execute QAR-3370 (JWT: Access with expired tokens)\r\n4. Execute QAR-3418 (JWT: Access with invalid issuer)\r\n5. Execute QAR-3419 (JWT: Access with invalid audience)\r\n6. Execute QAR-3420 (JWT: Access before expected timeframe)\r\n7. Execute QAR-3413 (JWT: Access with insufficient roles)\r\n8. Execute QAR-3421 (JWT: Tokens CCM Preview)\r\n9. Execute QAR-3423 (JWT: Tokens CCM Edit Finalize)\r\n10. Execute QAR-3424 (JWT: DocBase cmd line simpleRender)\r\n11. Execute QAR-3425 (JWT: Web Service with JWE token)\r\n12. Execute QAR-3426 (JWT: Rest API with JWE token)\r\n13. Execute QAR-3435 (Access using IDP server (sign in to DW)\r\n\r\n\r\n",
+    "customfield_10691": "2019-06-18",
+    "customfield_12992": null,
+    "customfield_10692": null,
+    "customfield_12991": null,
+    "customfield_12994": null,
+    "customfield_12993": null,
+    "customfield_12996": null,
+    "timetracking": {},
+    "customfield_12995": null,
+    "attachment": [
+      {
+        "self": "http://jira.assentis.info/rest/api/2/attachment/117037",
+        "id": "117037",
+        "filename": "keystores.zip",
+        "author": {
+          "self": "http://jira.assentis.info/rest/api/2/user?username=oana.sparleanu",
+          "name": "oana.sparleanu",
+          "key": "oana.sparleanu",
+          "emailAddress": "oana.sparleanu@assentis.com",
+          "avatarUrls": {
+            "48x48": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=48",
+            "24x24": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=24",
+            "16x16": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=16",
+            "32x32": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=32"
+          },
+          "displayName": "Oana Sparleanu",
+          "active": true,
+          "timeZone": "Europe/Zurich"
+        },
+        "created": "2019-05-29T10:06:02.958+0200",
+        "size": 10886,
+        "mimeType": "application/zip",
+        "content": "http://jira.assentis.info/secure/attachment/117037/keystores.zip"
+      },
+      {
+        "self": "http://jira.assentis.info/rest/api/2/attachment/117038",
+        "id": "117038",
+        "filename": "prom.prom",
+        "author": {
+          "self": "http://jira.assentis.info/rest/api/2/user?username=oana.sparleanu",
+          "name": "oana.sparleanu",
+          "key": "oana.sparleanu",
+          "emailAddress": "oana.sparleanu@assentis.com",
+          "avatarUrls": {
+            "48x48": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=48",
+            "24x24": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=24",
+            "16x16": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=16",
+            "32x32": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=32"
+          },
+          "displayName": "Oana Sparleanu",
+          "active": true,
+          "timeZone": "Europe/Zurich"
+        },
+        "created": "2019-05-29T10:06:35.813+0200",
+        "size": 146133,
+        "mimeType": "application/octet-stream",
+        "content": "http://jira.assentis.info/secure/attachment/117038/prom.prom"
+      },
+      {
+        "self": "http://jira.assentis.info/rest/api/2/attachment/117039",
+        "id": "117039",
+        "filename": "TestCases.zip",
+        "author": {
+          "self": "http://jira.assentis.info/rest/api/2/user?username=oana.sparleanu",
+          "name": "oana.sparleanu",
+          "key": "oana.sparleanu",
+          "emailAddress": "oana.sparleanu@assentis.com",
+          "avatarUrls": {
+            "48x48": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=48",
+            "24x24": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=24",
+            "16x16": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=16",
+            "32x32": "http://www.gravatar.com/avatar/ac8f8819b72c58f77ede39366b3b2ab7?d=mm&s=32"
+          },
+          "displayName": "Oana Sparleanu",
+          "active": true,
+          "timeZone": "Europe/Zurich"
+        },
+        "created": "2019-05-29T10:06:50.581+0200",
+        "size": 731993,
+        "mimeType": "application/zip",
+        "content": "http://jira.assentis.info/secure/attachment/117039/TestCases.zip"
+      }
+    ],
+    "aggregatetimeestimate": null,
+    "summary": "CLONE - Support for IDP integration with JWT tokens",
+    "customfield_13190": null,
+    "creator": {
+      "self": "http://jira.assentis.info/rest/api/2/user?username=ralf.nowicki",
+      "name": "ralf.nowicki",
+      "key": "ralf.nowicki",
+      "emailAddress": "ralf.nowicki@assentis.com",
+      "avatarUrls": {
+        "48x48": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=48",
+        "24x24": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=24",
+        "16x16": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=16",
+        "32x32": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=32"
+      },
+      "displayName": "Ralf Nowicki",
+      "active": true,
+      "timeZone": "Europe/Zurich"
+    },
+    "subtasks": [],
+    "customfield_11890": null,
+    "reporter": {
+      "self": "http://jira.assentis.info/rest/api/2/user?username=ralf.nowicki",
+      "name": "ralf.nowicki",
+      "key": "ralf.nowicki",
+      "emailAddress": "ralf.nowicki@assentis.com",
+      "avatarUrls": {
+        "48x48": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=48",
+        "24x24": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=24",
+        "16x16": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=16",
+        "32x32": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=32"
+      },
+      "displayName": "Ralf Nowicki",
+      "active": true,
+      "timeZone": "Europe/Zurich"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "environment": null,
+    "duedate": "2019-06-18",
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "comment": {
+      "comments": [
+        {
+          "self": "http://jira.assentis.info/rest/api/2/issue/114110/comment/181064",
+          "id": "181064",
+          "author": {
+            "self": "http://jira.assentis.info/rest/api/2/user?username=ralf.nowicki",
+            "name": "ralf.nowicki",
+            "key": "ralf.nowicki",
+            "emailAddress": "ralf.nowicki@assentis.com",
+            "avatarUrls": {
+              "48x48": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=48",
+              "24x24": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=24",
+              "16x16": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=16",
+              "32x32": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=32"
+            },
+            "displayName": "Ralf Nowicki",
+            "active": true,
+            "timeZone": "Europe/Zurich"
+          },
+          "body": "[Change Requests have a default original estimation of 1d, Please review the test case and adjust the estimations for your needs.]",
+          "updateAuthor": {
+            "self": "http://jira.assentis.info/rest/api/2/user?username=ralf.nowicki",
+            "name": "ralf.nowicki",
+            "key": "ralf.nowicki",
+            "emailAddress": "ralf.nowicki@assentis.com",
+            "avatarUrls": {
+              "48x48": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=48",
+              "24x24": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=24",
+              "16x16": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=16",
+              "32x32": "http://www.gravatar.com/avatar/760423691c13e6a318d0293b29c8ab6f?d=mm&s=32"
+            },
+            "displayName": "Ralf Nowicki",
+            "active": true,
+            "timeZone": "Europe/Zurich"
+          },
+          "created": "2019-04-30T11:21:36.421+0200",
+          "updated": "2019-04-30T11:21:36.421+0200"
+        }
+      ],
+      "maxResults": 1,
+      "total": 1,
+      "startAt": 0
+    },
+    "votes": {
+      "self": "http://jira.assentis.info/rest/api/2/issue/QAR-3310/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "worklog": {
+      "startAt": 0,
+      "maxResults": 20,
+      "total": 0,
+      "worklogs": []
+    }
+  }
+}

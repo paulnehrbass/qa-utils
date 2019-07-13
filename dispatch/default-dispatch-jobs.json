@@ -1,0 +1,62 @@
+{
+	"jobs":[
+		{
+			"id" : "6.4.3-BACKLOG-UNRELEASED-BUGS",
+			"jql" : "filter = 6.4.3-Backlog and type in (\"Unreleased Bug\")",
+			"plannedStart" : "2019-06-18",
+			"plannedEnd" : "2019-07-09",
+			"dueDate" : "2019-07-09",
+			"originalEstimate" : "2h",
+			"linkComment" : [
+				"Unreleased Bugs have a default original estimation of 2h",
+				"Please review the test case and adjust the estimations for your needs."	
+			]
+		},
+		{
+			"id" : "6.4.3-BACKLOG-BUGS",
+			"jql" : "filter = 6.4.3-Backlog and type in (\"Bug\")",
+			"plannedStart" : "2019-06-14",
+			"plannedEnd" : "2019-06-18",
+			"dueDate" : "2019-06-18",
+			"originalEstimate" : "2h",
+			"linkComment" : [
+				"Bugs have a default original estimation of 2h",
+				"Please review the test case and adjust the estimations for your needs."
+			]
+		},
+		{
+			"id" : "6.4.3-BACKLOG-IMPROVEMENTS",
+			"jql" : "filter = 6.4.3-Backlog and type in (Improvement)",
+			"plannedStart" : "2019-06-14",
+			"plannedEnd" : "2019-06-18",
+			"dueDate" : "2019-06-18",
+			"linkComment" : [
+				"Bugs have a default original estimation of 4h",
+				"Please review the test case and adjust the estimations for your needs."
+			]
+		},
+		{
+			"id" : "6.4.3-BACKLOG-CHANGE-REQUESTS",
+			"jql" : "filter = 6.4.3-Backlog and type in (\"Change Request\")",
+			"plannedStart" : "2019-06-14",
+			"plannedEnd" : "2019-06-18",
+			"dueDate" : "2019-06-18",
+			"linkComment" : [
+				"Change Requests have a default original estimation of 1d",
+				"Please review the test case and adjust the estimations for your needs."
+			]
+		},
+		{
+			"id" : "6.4.3-BACKLOG-SECURITY-ISSUES",
+			"jql" : "filter = 6.4.3-Backlog and type in (\"Security Issue\")",
+			"plannedStart" : "2019-06-14",
+			"plannedEnd" : "2019-06-18",
+			"dueDate" : "2019-06-18",
+			"originalEstimate" : "4h",
+			"linkComment" : [
+				"Security Issues have a default original estimation of 4h",
+				"Please review the test case and adjust the estimations for your needs."
+			]
+		}
+	]
+}

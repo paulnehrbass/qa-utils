@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.assentis.products:DocBase2-core-services:6.4.3-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/assentis/products/DocBase2-core-services/6.4.3-SNAPSHOT/DocBase2-core-services-6.4.3-20190712.002721-126.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/assentis/products/DocBase2-core-services/6.4.3-SNAPSHOT/DocBase2-core-services-6.4.3-20190712.002721-126-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/assentis/products/DocBase2-core-services/6.4.3-SNAPSHOT/DocBase2-core-services-6.4.3-20190712.002721-126-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

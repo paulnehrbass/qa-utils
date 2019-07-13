@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<docs>
+    <doc id="01">
+        <head>
+            <info>head_info</info>
+        </head>
+        <line>1</line>
+        <line>2</line>
+    </doc>
+    <doc id="02">
+        <head>
+            <info>head_info</info>
+        </head>
+        <line>1</line>
+        <line>2</line>
+    </doc>
+    <doc id="03">
+        <head>
+            <info>head_info</info>
+        </head>
+        <line>1</line>
+        <line>2</line>
+    </doc>
+    <doc id="04">
+        <head>
+            <info>head_info</info>
+        </head>
+        <line>1</line>
+        <line>2</line>
+    </doc>
+    <doc id="05">
+        <head>
+            <info>head_info</info>
+        </head>
+        <line>1</line>
+        <line>2</line>
+    </doc>
+    <doc id="06">
+        <head>
+            <info>head_info</info>
+        </head>
+        <line>1</line>
+        <line>2</line>
+    </doc>
+    <doc id="07">
+        <head>
+            <info>head_info</info>
+        </head>
+        <line>1</line>
+        <line>2</line>
+    </doc>
+    <doc id="08">
+        <head>
+            <info>head_info</info>
+        </head>
+        <line>1</line>
+        <line>2</line>
+    </doc>
+    <doc id="09">
+        <head>
+            <info>head_info</info>
+        </head>
+        <line>1</line>
+        <line>2</line>
+    </doc>
+    <doc id="10">
+        <head>
+            <info>head_info</info>
+        </head>
+        <line>1</line>
+        <line>2</line>
+    </doc>
+</docs>
