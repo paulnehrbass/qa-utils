@@ -138,7 +138,8 @@
                     <include>http-invoker.xml</include>
                     <include>readme.txt</include>
                     <include>postprocessing.bat</include>
-                    <include>sample_massProduction.prom</include>
+                    <include>qa-reports-1.1.prom</include>
+                    <include>qa-reports-data-multiple.xml</include>
                   </includes>
                   <!--  <filtering>true</filtering> -->
                 </resource>

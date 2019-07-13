@@ -23,10 +23,10 @@ public class PPClient {
 
     final static Logger logger = Logger.getLogger(PPClient.class);
 
-    final static String httpInvoker = "/http-invoker.xml";
+    final static String httpInvoker = "http-invoker.xml";
     final static String processName = "qa-postprocessing-processor";
     final static String fileSplitter = "adb_fileSplitterTask";
-    final static String sourceFileName = "/massProductionTestData.xml";
+    final static String sourceFileName = "/qa-reports-data-multiple.xml";
 
     final static String sourceFolder= "input";
     final static String docbaseServer = "http://localhost:14002/DocBase2";
@@ -114,14 +114,16 @@ public class PPClient {
         FileSplitterRule[] result = new FileSplitterRule[1];
 
         result[0] = new FileSplitterRule();
-        result[0].setXmlSplitXPath("/docs/doc");
+        //result[0].setXmlSplitXPath("/docs/doc");
+        result[0].setXmlSplitXPath("/Items/Reports");
         result[0].setMaxChunkSize(chunksize);
-        result[0].setParentBegin("<docs>");
-        result[0].setTemplateAlias("sample_massProduction");
+        //result[0].setParentBegin("<docs>");
+        //result[0].setTemplateAlias("sample_massProduction");
+        result[0].setTemplateAlias("qa-report");
         result[0].setOutputFormat("XEP");
         result[0].setContentId("application/xml");
         result[0].setDelegateBeanRef("adb_inDataDatabaseSegmenter");
-        result[0].setElementCountPath("/docs/doc");
+        result[0].setElementCountPath("/Items/Reports");
         //result[0].setMaxElementsSize(10);
         //result[0].setBigDocThreshold(100);
         return result;
