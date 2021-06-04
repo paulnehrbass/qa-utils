@@ -22,7 +22,7 @@
 
     <properties>
         <commons.cli.version>1.4</commons.cli.version>
-        <appache.httpcomponents.version>4.5.9</appache.httpcomponents.version>
+        <appache.httpcomponents.version>4.5.13</appache.httpcomponents.version>
         <commons.io.version>2.5</commons.io.version>
         <log4j.version>1.2.17</log4j.version>
     </properties>
